@@ -21,9 +21,9 @@ export const Main = () => {
   return (
     <MainUI>
       <ul>
-        {videoList.map((video) => (
+        {videoList.map((video, index) => (
           <li>
-            <VideoCard key={video.id} video={video} />
+            <VideoCard key={video.id} video={video} index={index} />
           </li>
         ))}
       </ul>

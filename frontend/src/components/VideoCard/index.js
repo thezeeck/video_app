@@ -1,10 +1,12 @@
 import { VideoCardUI } from "./VideoCard.styled";
+import { COLORS_PALLETE } from "../../constant/colors";
 
-export const VideoCard = ({ video }) => {
+export const VideoCard = ({ video, index }) => {
+  const pictureColor = COLORS_PALLETE[index % COLORS_PALLETE.length].replace("#", "");
   return (
-    <VideoCardUI>
+    <VideoCardUI bgColor={index}>
       <figure>
-        <img src="https://via.placeholder.com/450/0000FF/FFFFFF/?text=cover" />
+        <img src={`https://via.placeholder.com/450/${pictureColor}/FFFFFF/?text=${video.title}`} />
       </figure>
       <section>
         <h3>{video.title}</h3>

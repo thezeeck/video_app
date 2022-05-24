@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const VideoCardUI = styled.article`
   position: relative;
   overflow: hidden;
+  border-radius: 0.5rem;
 
   > figure {
     margin: 0;
