@@ -22,8 +22,8 @@ export const Main = () => {
     <MainUI>
       <ul>
         {videoList.map((video, index) => (
-          <li>
-            <VideoCard key={video.id} video={video} index={index} />
+          <li key={video.id}>
+            <VideoCard video={video} index={index} />
           </li>
         ))}
       </ul>

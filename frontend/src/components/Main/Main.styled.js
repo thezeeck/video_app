@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainUI = styled.main`
-  padding: 1rem;
+  padding: 2rem;
   max-width: 1000px;
   margin: 0 auto;
 
@@ -11,7 +11,7 @@ export const MainUI = styled.main`
     padding: 0;
     display: flex;
     flex-flow: column;
-    gap: 1rem;
+    gap: 2rem;
 
     @media (min-width: 600px) {
       flex-flow: row;
