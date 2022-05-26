@@ -13,7 +13,7 @@ export const MainUI = styled.main`
     flex-flow: column;
     gap: 2rem;
 
-    @media (min-width: 600px) {
+    @media (min-width: 500px) {
       flex-flow: row;
       flex-wrap: wrap;
     }
@@ -21,12 +21,12 @@ export const MainUI = styled.main`
     > li {
       position: relative;
 
-      @media (min-width: 600px) {
-        width: calc(33.3333% - (2rem / 3));
+      @media (min-width: 500px) {
+        width: calc(50% - (2rem / 2));
       }
 
-      @media (min-width: 900px) {
-        width: calc(20% - (4rem / 5));
+      @media (min-width: 1000px) {
+        width: calc(33.3333% - (4rem / 3));
       }
     }
   }

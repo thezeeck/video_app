@@ -1,8 +1,9 @@
 import { Main } from "../components/Main";
+import { Header } from "../components/Header";
 
 export const HomeLayout = () => (
   <>
-    <header>header</header>
+    <Header />
     <Main />
   </>
 );

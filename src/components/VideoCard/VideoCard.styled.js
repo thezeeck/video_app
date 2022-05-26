@@ -60,11 +60,38 @@ export const Description = styled.p`
   margin: 0.5rem 0;
 `;
 
-export const TableMetaData = styled.p`
-  display: table;
+export const TableMetaData = styled.section`
+  display: grid;
+  grid-template-columns: repeat(2, calc(70% - 1rem) 30%);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1rem;
   position: absolute;
   left: 0;
   bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  > span:first-child {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+  }
+
+  > span:nth-child(2) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
+
+  > span:last-child {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
 `;
 
 export const Views = styled.span`
